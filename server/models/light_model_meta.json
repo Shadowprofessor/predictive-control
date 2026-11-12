@@ -1,0 +1,90 @@
+{
+  "dusk": {
+    "rf_margin_min": 7.0,
+    "seasonal_margin_min": 12.0,
+    "clamp_lo": -75.17716210837332,
+    "clamp_hi": -8.756398903680005,
+    "weather_medians": {
+      "cloud_cover_w": 36.43451388888889,
+      "cloud_cover_low_w": 0.0,
+      "cloud_cover_mid_w": 11.860972222222223,
+      "cloud_cover_high_w": 26.366666666666667,
+      "shortwave_radiation_w": 250.06437499999998,
+      "diffuse_radiation_w": 128.65083333333334,
+      "direct_normal_irradiance_w": 261.5028472222222,
+      "precipitation_w": 0.0,
+      "relative_humidity_2m_w": 47.53145833333333,
+      "temperature_2m_w": 33.42091666666667,
+      "pm2_5_w": 31.383520833333336,
+      "aerosol_optical_depth_w": 0.5199541666666667,
+      "dust_w": 136.36916666666667
+    },
+    "n_train": 122,
+    "train_months": [
+      5,
+      6,
+      7,
+      8,
+      10
+    ]
+  },
+  "dawn": {
+    "rf_margin_min": 12.0,
+    "seasonal_margin_min": 15.0,
+    "clamp_lo": 10.80418283264,
+    "clamp_hi": 72.94903222165328,
+    "weather_medians": {
+      "cloud_cover_w": 28.393749999999997,
+      "cloud_cover_low_w": 0.0,
+      "cloud_cover_mid_w": 4.689027777777778,
+      "cloud_cover_high_w": 6.215694444444445,
+      "shortwave_radiation_w": 26.446666666666665,
+      "diffuse_radiation_w": 20.176666666666662,
+      "direct_normal_irradiance_w": 31.270916666666665,
+      "precipitation_w": 0.0,
+      "relative_humidity_2m_w": 68.32791666666668,
+      "temperature_2m_w": 27.56090972222222,
+      "pm2_5_w": 44.48656944444444,
+      "aerosol_optical_depth_w": 0.5436805555555555,
+      "dust_w": 142.42916666666667
+    },
+    "n_train": 118,
+    "train_months": [
+      5,
+      6,
+      7,
+      8,
+      10
+    ]
+  },
+  "features": [
+    "sin1",
+    "cos1",
+    "sin2",
+    "cos2",
+    "cloud_cover_w",
+    "cloud_cover_low_w",
+    "cloud_cover_mid_w",
+    "cloud_cover_high_w",
+    "shortwave_radiation_w",
+    "diffuse_radiation_w",
+    "direct_normal_irradiance_w",
+    "precipitation_w",
+    "relative_humidity_2m_w",
+    "temperature_2m_w",
+    "pm2_5_w",
+    "aerosol_optical_depth_w",
+    "dust_w"
+  ],
+  "windows_min": {
+    "dusk": [
+      -180,
+      -60
+    ],
+    "dawn": [
+      -60,
+      60
+    ]
+  },
+  "target_violation_rate": 0.1
+}
